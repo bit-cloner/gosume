@@ -24,7 +24,7 @@ if test -f "$F1"; then
 else
     ./saml2aws configure
 fi 
-~/saml2aws login
+./saml2aws login
 echo -e "You have been authenticated with AWS app configured in Identity provider.\n you can now assume a role"
 echo -e "Enter the arn of the role to be assumed"
 read arn
