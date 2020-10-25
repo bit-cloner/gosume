@@ -7,11 +7,15 @@ if test -f "$B1"; then
     echo "$B1 exists."
 else
     # wget or curl binary from github 
+    wget https://github.com/bit-cloner/gosume/releases/download/0.9/saml2aws
+    chmod +x ./saml2aws
 fi
 if test -f "$B2"; then
     echo "$B2 exists."
 else
     # wget or curl binary from github 
+    wget https://github.com/bit-cloner/gosume/releases/download/0.9/assume
+    chmod +x ./assume
 fi
 # Login to Identity Provider to create a credential profile
 # Check if .saml2aws file exists 
